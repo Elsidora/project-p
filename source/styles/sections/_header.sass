@@ -1,0 +1,83 @@
+.page-header
+  position: relative
+  color: #ffffff
+  box-sizing: content-box
+  &__top
+    display: flex
+    justify-content: space-around
+    position: relative
+    background-color: $color-header
+    min-height: 65px
+  &__bottom
+    position: relative
+    background-image: url("../img/background-mobile@1x.jpg")
+    background-repeat: no-repeat
+    margin-top: 193px
+    min-height: 462px
+  &__title
+    display: none
+    &--form,
+    &--photo
+      display: block
+      font-weight: 300
+      font-size: 24px
+      color: #ffffff
+      text-align: center
+      padding: 25px 20px
+      padding-top: 95px
+  &__wrapper
+    position: absolute
+    padding: 29px 20px
+    left: 0
+    top: 462px
+    background-color: $color-header
+
+  &__link
+    display: block
+    color: #ffffff
+    text-align: center
+    border: 2px solid #ffffff
+    border-radius: 30px
+    padding: 10px
+    margin: 0 auto
+    margin-bottom: 15px
+    font-family: "Open Sans", "Arial", sans-serif
+    font-size: 18px
+    font-weight: 700
+
+  &__description
+    font-weight: 300
+    line-height: 24px
+    text-align: center
+
+.links
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-around
+  padding: 20px
+  &__link
+    width: 47px
+    height: 56px
+    background-color: red
+
+
+.site-list
+  position: absolute
+  border-top: 1px solid #000000
+  top: 65px
+  left: 0
+  z-index: 1
+  &__item
+    background-color: $color-header
+    width: 274px
+    border-bottom: 1px solid #000000
+    padding: 16px 23px
+    text-align: center
+  &__link
+    font-weight: 700
+    font-size: 18px
+    line-height: 32px
+    color: #ffffff
+    text-transform: uppercase
+
+

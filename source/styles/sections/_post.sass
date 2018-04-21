@@ -1,0 +1,37 @@
+.post
+  &__description
+    text-align: center
+    padding: 24px 0
+    margin-bottom: 20px
+  &__wrapper
+    background: #f2f2f2
+    padding: 20px
+  &__tools-list
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-around
+  &__icon
+    position: relative
+    &::before
+      content: ''
+      position: absolute
+      width: 48px
+      height: 44px
+      left: -20px
+      background: pink
+  &__filter
+    position: relative
+  &__filter-scale
+    width: 240px
+    height: 2px
+    background: #000000
+  &__filter-toggle
+    position: absolute
+    left: 200px
+    top: -5px
+    width: 12px
+    height: 12px
+    border: 2px solid $color-form
+    background: #ffffff
+    border-radius: 50%
+

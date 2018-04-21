@@ -1,0 +1,45 @@
+@import "normalize"
+@import "sections/fonts"
+@import "mixins"
+@import "variables"
+
+html
+  box-sizing: border-box
+
+*,
+*::after,
+*::before
+  box-sizing: inherit
+
+body
+  min-width: 320px
+  margin: 0
+  font-family: "Open Sans", "Arial", sans-serif
+  font-size: 14px
+  font-weight: 400
+  line-height: 30px
+  color: #000000
+
+.container
+  width: 320px
+  margin: 0 auto
+  padding: 0
+
+img
+  max-width: 100%
+  height: auto
+
+p, ul, li, blockquote, cite, form, fieldset, input, h1, h2, h3, h4, h5, h6
+  margin: 0
+  padding: 0
+
+ul
+  list-style: none
+
+
+a
+  text-decoration: none
+
+
+
+@import "sections/*.sass"
