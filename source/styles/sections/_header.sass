@@ -1,20 +1,28 @@
-.page-header
-  position: relative
-  color: #ffffff
-  box-sizing: content-box
-  &__top
+/*.page-header
+  display: flex
+  flex-direction: column*/
+
+  /*&__wrapper
     display: flex
-    justify-content: space-around
-    position: relative
+    flex-direction: column
+    padding: 29px 20px
     background-color: $color-header
-    min-height: 65px
-  &__bottom
-    position: relative
-    background-image: url("../img/background-mobile@1x.jpg")
-    background-repeat: no-repeat
-    margin-top: 193px
-    min-height: 462px
-  &__title
+    min-height: 271px*/
+
+
+.page-header
+  background-color: rgba(0, 0, 0, 0.3)
+  &__inner
+    display: flex
+    justify-content: space-between
+  &__logo
+    padding: 12px 0
+.main-nav
+  padding: 20px 0
+  &__list
+    display: none
+
+/*&__title
     display: none
     &--form,
     &--photo
@@ -48,9 +56,9 @@
   &__description
     font-weight: 300
     line-height: 24px
-    text-align: center
+    text-align: center*/
 
-.links
+/*.links
   display: flex
   flex-wrap: wrap
   justify-content: space-around
@@ -58,10 +66,10 @@
   &__link
     width: 47px
     height: 56px
-    background-color: red
+    background-color: red*/
 
 
-.site-list
+/*.site-list
   position: absolute
   border-top: 1px solid #000000
   top: 65px
@@ -78,6 +86,6 @@
     font-size: 18px
     line-height: 32px
     color: #ffffff
-    text-transform: uppercase
+    text-transform: uppercase*/
 
 
