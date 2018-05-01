@@ -1,3 +1,68 @@
 .tariff
   background-color: #f2f2f2
-  min-height: 470px
+  min-height: 280px
+  padding: 90px 0 50px
+  &__inner
+    width: 836px
+    margin: 0 auto
+  &__table
+    background: #ffffff
+    border-collapse: collapse
+    margin-bottom: 35px
+  &__list
+    width: 276px
+    border-left: 2px solid #f1f1f1
+  &__cost
+    display: block
+    font-weight: 300
+    font-size: 24px
+    color: #f1f1f1
+    text-transform: uppercase
+    text-align: center
+  &__item
+    padding: 15px 20px
+    text-transform: uppercase
+    border-bottom: 2px solid  #f1f1f1
+    &--title
+      padding: 17px 20px 21px
+      font-weight: 700
+      font-size: 18px
+      color: #ffffff
+      background-color: $color-menu-mobile
+      text-align: center
+      text-transform: uppercase
+      border-bottom: none
+    &--yes
+      position: relative
+      &::before
+        position: absolute
+        content: ''
+        width: 30px
+        height: 3px
+        left: 231px
+        bottom: 29px
+        background-color: #3dc644
+        transform: rotate(-45deg)
+      &::after
+        position: absolute
+        content: ''
+        width: 15px
+        height: 3px
+        left: 224px
+        bottom: 24px
+        background-color: #3dc644
+        transform: rotate(45deg)
+    &--no
+      position: relative
+      &::before,
+      &::after
+        position: absolute
+        content: ''
+        width: 32px
+        height: 3px
+        left: 227px
+        bottom: 33px
+        background-color: #f25b26
+        transform: rotate(-45deg)
+      &::after
+        transform: rotate(45deg)
