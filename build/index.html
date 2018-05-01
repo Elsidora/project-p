@@ -8,8 +8,8 @@
 </head>
 <body>
   <header class="page-header">
-    <div class="page-header__inner">
-      <a class="page-header__logo"><img src="http://placehold.it/147x40" alt="Переход на главную" class="page-header__logo-image" width="" height=""></a>
+    <div class="page-header__inner container">
+      <a class="page-header__logo"><img src="http://placehold.it/75x22" alt="Переход на главную" class="page-header__logo-image" width="" height=""></a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
         <ul class="main-nav__list site-list">
@@ -38,7 +38,8 @@
     </div>
 
     <section class="features">
-      <h2 class="features__title">Устали от серости мегаполиса? Нам есть, что вам предложить!</h2>
+      <h2 class="features__title">Устали от серости мегаполиса?</h2>
+      <p class="features__title">Нам есть, что вам предложить!</p>
       <div class="features__inner">
         <div class="container">
           <ul class="features__list">
@@ -58,7 +59,7 @@
           <ul class="features__list pictures">
             <li class="pictures__picture pictures__picture--sentiment"><img src="" alt="" width="186" height="382"></li>
             <li class="pictures__picture pictures__picture--world"><img src="" alt="" width="186" height="382"></li>
-            <li class="pictures__picture pictures__picture--friends"><img src="" alt="" width="186" height="382"></li>
+            <li class="pictures__picture pictures__picture--friends"><img src="img/iphone-screen-#3.jpg" alt="" width="157" height="320"></li>
           </ul>
           <div class="effect">
             <div class="effect__inner">
@@ -109,7 +110,7 @@
             </ul>
           </td>
           <td>
-            <ul class="tariff__list">
+            <ul class="tariff__list showing">
               <li class="tariff__item tariff__item--title">Стандарт<span class="tariff__cost">3,99 USD</span></li>
               <li class="tariff__item tariff__item--yes">Розовый фильтр</li>
               <li class="tariff__item tariff__item--yes">Смайлики</li>
@@ -127,9 +128,9 @@
         </tr>
       </table>
       <div class="tariff__toggles slider__toggles">
-        <button class="slider__toggle" type="button">1</button>
-        <button class="slider__toggle slider__toggle--active" type="button">2</button>
-        <button class="slider__toggle" type="button">3</button>
+        <button class="slider__toggle" id="previous" type="button">1</button>
+        <button class="slider__toggle slider__toggle--active" id="active" type="button">2</button>
+        <button class="slider__toggle" id="next" type="button">3</button>
       </div>
       </div>
     </section>
