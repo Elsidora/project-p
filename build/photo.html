@@ -8,8 +8,8 @@
 </head>
 <body>
   <header class="page-header">
-    <div class="container">
-      <a class="page-header__logo"><img src="http://placehold.it/147x40" alt="Переход на главную" class="page-header__logo-image" width="" height=""></a>
+    <div class="page-header__inner container">
+      <a class="page-header__logo"><img src="http://placehold.it/75x22" alt="Переход на главную" class="page-header__logo-image" width="" height=""></a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
         <ul class="main-nav__list site-list">
@@ -25,15 +25,16 @@
     <section class="promo">
       <h1 class="promo__title promo__title--photo">Фотографии пользователей</h1>
     </section>
-    <div class="container">
+    <div class="page-content__inner">
 
       <p class="page-content__text call-to-action">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
       <section class="photos">
 
         <div class="panorama-day">
-          <picture>
+          <picture class="panorama-day__picture">
             <img class="panorama-day__item" src="img/panorama-mobile.jpg" width="320" height="137" alt="">
           </picture>
+          <div class="container">
         <div class="panorama-day__comment">
           <span class="panorama-day__name">Анна</span>
           <time class="panorama-day__time">(5 минут назад)</time>
@@ -41,8 +42,9 @@
           <a class="panorama-day__like" aria-label="like"></a>
           <p class="panorama-day__prefer">Нравится: <span class="count">215</span></p>
         </div>
+          </div>
       </div>
-      <div class="photos__wrapper">
+      <div class="photos__wrapper container">
         <div class="photo">
           <picture>
             <img src="img/photo-1-mobile.jpg" alt="" class="photo__item" width="280" height="180">
@@ -119,7 +121,7 @@
     </section>
     <section class="post">
       <p class="post__description">Затмите их всех!<br>Выкладывайте всё, что накопилось в телефоне!</p>
-      <div class="post__inner">
+      <div class="post__inner container">
         <form action="" method="post" class="post__form">
           <picture>
             <img src="img/photo-7-mobile.jpg" alt="" class="post__photo" width="280" height="374">
@@ -129,7 +131,7 @@
               <li class="post__tools-item">
                 <div class="post__tool-wrapper">
                   <button class="post__icon post__icon--active" type="button"></button>
-                  <div class="post__filter">
+                  <div class="post__filter post__filter--size">
                     <div class="post__filter-scale"></div>
                     <div class="post__filter-toggle"></div>
                   </div>
@@ -138,7 +140,7 @@
               <li class="post__tools-item">
                 <div class="post__tool-wrapper">
                   <button class="post__icon" type="button"></button>
-                  <div class="post__filter">
+                  <div class="post__filter post__filter--contrast">
                     <div class="post__filter-scale"></div>
                     <div class="post__filter-toggle"></div>
                   </div>
@@ -147,15 +149,15 @@
               <li class="post__tools-item">
                 <div class="post__tool-wrapper">
                   <button class="post__icon" type="button"></button>
-                  <div class="post__filter">
+                  <div class="post__filter post__filter--bright">
                     <div class="post__filter-scale"></div>
                     <div class="post__filter-toggle"></div>
                   </div>
                 </div>
               </li>
             </ul>
-            <button type="submit" class="post__post">Запостить</button>
-            <button type="reset" class="post__cancel">Отмена</button>
+            <button type="submit" class="post__post" aria-label="Запостить">Запостить</button>
+            <button type="reset" class="post__cancel" aria-label="Сбросить" >Отмена</button>
           </div>
         </form>
       </div>

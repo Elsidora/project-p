@@ -1,37 +1,75 @@
 .post
   &__description
+    width: 320px
+    margin: 0 auto
     text-align: center
-    padding: 24px 0
+    padding: 20px 0 21px
     margin-bottom: 20px
-  &__wrapper
-    background: #f2f2f2
-    padding: 20px
+  &__inner
+    background-color: #f2f2f2
+    padding-top: 20px
+    padding-bottom: 40px
   &__tools-list
     display: flex
     flex-wrap: wrap
     justify-content: space-around
+    padding-bottom: 80px
+    border-bottom: 1px solid #d0d0d0
+    margin-bottom: 35px
   &__icon
     position: relative
+    margin-bottom: 50px
     &::before
       content: ''
       position: absolute
       width: 48px
       height: 44px
       left: -20px
+      bottom: -55px
       background: pink
+  &__tool-wrapper
+    position: relative
   &__filter
     position: relative
+    &--contrast,
+    &--bright
+      display: none
+    &--size
+      position: absolute
+      left: -20px
+      bottom: -45px
   &__filter-scale
     width: 240px
     height: 2px
     background: #000000
   &__filter-toggle
     position: absolute
-    left: 200px
+    left: 190px
     top: -5px
-    width: 12px
-    height: 12px
+    width: 14px
+    height: 14px
     border: 2px solid $color-form
     background: #ffffff
+
     border-radius: 50%
+  &__post,
+  &__cancel
+    display: block
+    width: 276px
+    padding: 16px 0
+    font-weight: 700
+    font-size: 18px
+    line-height: 18px
+    text-align: center
+    border-radius: 30px
+    background: #ffffff
+
+  &__post
+    border: 2px solid $color-form
+    color: $color-form
+    margin-bottom: 15px
+  &__cancel
+    border: 2px solid #d0d0d0
+    color: #d0d0d0
+
 
