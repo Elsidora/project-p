@@ -2,13 +2,13 @@
   display: flex
   flex-direction: column
   &__inner
-    margin-top: -228px
+    margin-top: -226px
   &__prize
     width: 320px
     margin: 0 auto
     text-align: center
     background: #ffffff
-    padding: 43px 20px
+    padding: 45px 20px 25px
     color: #000000
   &__text
     width: 320px
@@ -21,7 +21,7 @@
     display: block
     text-transform: uppercase
     text-align: center
-    padding: 20px
+    padding: 20px 0 15px
 
 .form
   position: relative
@@ -30,32 +30,29 @@
     color: $color-form
     text-transform: uppercase
     padding: 0 23px
+    margin-bottom: 7px
     &--contact
       margin-bottom: 5px
   &__input
-    width: 278px
+    width: 280px
     font-family: "Open Sans", "Arial", sans-serif
     font-size: 18px
     line-height: 30px
     font-weight: 400
     padding: 14px 20px
-    margin-bottom: 22px
+    margin-bottom: 15px
+
   &__full-name
-    position: absolute
-    top: -382px
     background: #ffffff
-    padding: 10px 20px
+    padding: 10px 20px 30px
   &__checkbox
     background-color: #f2f2f2
     padding: 30px 0
-    margin-top: 322px
   &__radio
     background-color: #f2f2f2
-    padding: 30px 0
-    margin-bottom: 18px
+    padding: 20px 0
   &__area
-    padding: 30px 20px
-    margin-bottom: 13px
+    padding: 40px 20px
   &__area-description
     font-size: 18px
     line-height: 30px
@@ -63,15 +60,14 @@
     margin-top: 35px
   &__title
     position: absolute
-    top: 30px
+    width: 280px
+    top: 35px
     color: $color-form
     font-size: 14px
     line-height: 18px
     text-transform: uppercase
     text-align: center
     padding: 0 23px
-    &--checkbox
-      padding: 0 43px
   &__input-checkbox,
   &__input-radio
     opacity: 0
@@ -79,22 +75,20 @@
     display: block
     position: relative
     cursor: pointer
-    padding-left: 90px
+    padding-left: 70px
     font-family: "Open Sans", "Arial", sans-serif
     font-size: 18px
     line-height: 30px
     font-weight: 400
     color: $color-menu-mobile
     margin-bottom: 22px
-    &:nth-of-type(1)
-      margin-top: 50px
     &::before
       position: absolute
       content: ''
       width: 36px
       height: 38px
       top: -3px
-      left: 20px
+      left: 0
       background: #ffffff
       border: 1px solid #f1f1f1
     &::after
@@ -103,15 +97,14 @@
       width: 0
       height: 0
       top: 8px
-      left: 28px
+      left: 8px
     &--radio
-      margin-bottom: 10px
       &::before
         border-radius: 50%
       &::after
-        left: 31px
+        left: 11px
   &__contacts
-    padding: 26px 20px
+    padding: 26px 0 30px
 input[type="checkbox"]:checked + label::after
   width: 22px
   height: 10px
@@ -136,9 +129,12 @@ input[type="submit"]
   text-transform: uppercase
   margin: 0 auto
   margin-bottom: 15px
+  border: none
 
 
 
 fieldset
   position: relative
   border: none
+.margin
+  margin-top: 55px
