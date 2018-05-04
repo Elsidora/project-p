@@ -13,6 +13,9 @@ $.gulp.task('sass', function() {
 		.pipe($.gcmq())
 		.pipe($.glp.sourcemaps.write())
 		.pipe($.gulp.dest('./build/css'))
+        .pipe($.glp.cssmin())
+		.pipe($.glp.rename({suffix: '.min'}))
+		.pipe($.gulp.dest('./build/css'))
 		.pipe($.browserSync.stream())
 	})
 };

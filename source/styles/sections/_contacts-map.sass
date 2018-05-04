@@ -2,15 +2,14 @@
   background-image: url("../img/map-mobile.jpg")
   background-repeat: no-repeat
   background-position: center
-  padding-top: 0
   min-height: 645px
   margin-top: -30px
   padding-top: 30px
   &__inner
     background-color: #ffffff
-    padding-bottom: 40px
+    padding-bottom: 20px
   &__block
-    margin-bottom: 15px
+    margin-bottom: 17px
   &__title
     width: 320px
     margin: 0 auto
@@ -18,7 +17,7 @@
     font-size: 24px
     text-align: center
     background:#ffffff
-    padding: 74px 45px 25px
+    padding: 44px 45px 30px
   &__sub-title
     font-weight: 700
     font-size: 18px
@@ -26,10 +25,12 @@
   &__phone,
   &__mail
     display: block
-
-.container-map
-  background-image: linear-gradient(225deg, #ffffff 75%, transparent 25%), linear-gradient(135deg, #ffffff 75%, transparent 25%)
-  padding-bottom: 50px
+    &:hover
+      color: #000000
+      border-bottom: 1px solid  #000000
+    &:active
+      color: #b5b9be
+      border: none
 
 .data
   color: $color-form

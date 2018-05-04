@@ -27,7 +27,6 @@ $.gulp.task('default', $.gulp.series(
 		'fonts',
 		'imagemin'
 	),
-	'mincss',
 	'minjs',
 	$.gulp.parallel(
 		'watch',

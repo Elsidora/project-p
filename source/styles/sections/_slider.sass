@@ -13,11 +13,17 @@
     margin: auto
     width: 6px
     height: 6px
-    background-color: #bec2c7
+    background-color: #b5b9be
     border: none
     border-radius: 50%
+    cursor: pointer
     &--active
       width: 12px
       height: 12px
       background-color: #ffffff
       border: 3px solid #000000
+    &:not(.slider__toggle--active):hover
+      background-color: #000000
+    &:not(.slider__toggle--active):active
+      background-color: #f2f2f2
+
