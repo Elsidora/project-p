@@ -1,27 +1,30 @@
 .page-header
-  margin-top: 260px
+  display: flex;
+  flex-direction: column;
   background-color: rgba(0, 0, 0, 0.3)
   &__inner
+    position: relative
     display: flex
     justify-content: space-between
-    padding: 16px 20px
+
+    padding: 0
+  &__logo
+    position: absolute
 .main-nav
   position: relative
+  display: block
+  width: 320px
+  margin: 0 auto
+  min-height: 325px
+  outline: 1px solid red
+
   &__list
-    display: block
-
-
-.site-list
-  position: absolute
   border-top: 1px solid #000000
-  top: 65px
-  left: 200px
-  z-index: 1
   &__item
+    width: 320px
     background-color: $color-header
-    width: 274px
     border-bottom: 1px solid #000000
-    padding: 16px 23px
+    padding: 16px 0
     text-align: center
   &__link
     font-weight: 700
@@ -33,5 +36,3 @@
       color: $color-form
     &:not(.site-list__link--active):active
       color: rgba(210, 40, 86, 0.3)
-
-
