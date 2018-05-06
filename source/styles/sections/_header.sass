@@ -3,28 +3,97 @@
   flex-direction: column;
   background-color: rgba(0, 0, 0, 0.3)
   &__inner
-    position: relative
     display: flex
     justify-content: space-between
-
     padding: 0
   &__logo
-    position: absolute
+    width: 75px
+    height: 22px
+    margin: 22px 20px 26px
+    margin-right: -95px
+  &__logo-image
+    width: 75px
+    height: 22px
 .main-nav
   position: relative
-  display: block
   width: 320px
   margin: 0 auto
-  min-height: 325px
+  min-height: 66px
+  //margin-left: -75px
   outline: 1px solid red
 
   &__list
-  border-top: 1px solid #000000
+    margin: 0
+    padding-top: 70px
+    background-color: $color-header
+    border-top: 1px solid #000000
+
+  &__toggle
+    position: absolute
+    top: 0
+    right: 0
+    z-index: 2
+
+    display: block
+    width: 70px
+    height: 70px
+
+    background-color: pink
+
+    cursor: pointer
+    border: none
+  &--closed .main-nav__toggle::before
+    content: ""
+
+    position: absolute
+    top: 23px
+    left: 0
+
+    width: 50px
+    height: 3px
+
+    background-color: #ffffff
+    box-shadow: 0 8px 0 0 #ffffff, 0 16px 0 0 #ffffff
+  &--closed .main-nav__toggle:hover::before
+    background-color: $color-form
+    box-shadow: 0 8px 0 0 $color-form, 0 16px 0 0 $color-form
+
+  &--closed .main-nav__toggle:active::before
+    background-color: rgba(210, 40, 86, 0.3)
+    box-shadow: 0 8px 0 0 rgba(210, 40, 86, 0.3), 0 16px 0 0 rgba(210, 40, 86, 0.3)
+  &--opened .main-nav__toggle::before,
+  &--opened .main-nav__toggle::after
+    content: ""
+
+    position: absolute
+    top: 30px
+    right: 20px
+
+    width: 34px
+    height: 4px
+
+    background-color: #ffffff
+
+  &--opened .main-nav__toggle::before
+    transform: rotate(45deg)
+    box-shadow: none
+
+  &--opened .main-nav__toggle::after
+    transform: rotate(-45deg)
+
+  &--opened .main-nav__toggle:hover::before,
+  &--opened .main-nav__toggle:hover::after
+    background-color: $color-form
+
+  &--opened .main-nav__toggle:active::before,
+  &--opened .main-nav__toggle:active::after
+    background-color: rgba(210, 40, 86, 0.3)
   &__item
     width: 320px
-    background-color: $color-header
+
+    border-top: 1px solid rgba(255, 255, 255, 0.2)
     border-bottom: 1px solid #000000
-    padding: 16px 0
+    padding: 15px 0
     text-align: center
   &__link
     font-weight: 700
@@ -32,7 +101,7 @@
     line-height: 32px
     color: #ffffff
     text-transform: uppercase
-    &:not(.site-list__link--active):hover
+    &:not(.main-nav__link--active):hover
       color: $color-form
-    &:not(.site-list__link--active):active
+    &:not(.main-nav__link--active):active
       color: rgba(210, 40, 86, 0.3)
