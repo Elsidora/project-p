@@ -3,13 +3,14 @@
   flex-direction: column;
   background-color: rgba(0, 0, 0, 0.3)
   &__inner
+    position: relative
     display: flex
     justify-content: space-between
     padding: 0
   &__logo
     width: 75px
     height: 22px
-    margin: 22px 20px 26px
+    margin: 22px 20px 22px
     margin-right: -95px
   &__logo-image
     width: 75px
@@ -24,7 +25,7 @@
 
   &__list
     margin: 0
-    padding-top: 70px
+    padding-top: 66px
     background-color: $color-header
     border-top: 1px solid #000000
 
@@ -36,9 +37,9 @@
 
     display: block
     width: 70px
-    height: 70px
+    height: 66px
 
-    background-color: pink
+    background-color: transparent
 
     cursor: pointer
     border: none
@@ -88,6 +89,10 @@
   &--opened .main-nav__toggle:active::before,
   &--opened .main-nav__toggle:active::after
     background-color: rgba(210, 40, 86, 0.3)
+  .main-nav-nojs .main-nav__toggle
+    display: none
+  .main-nav--nojs .main-nav__list
+    display: block
   &__item
     width: 320px
 
@@ -105,3 +110,11 @@
       color: $color-form
     &:not(.main-nav__link--active):active
       color: rgba(210, 40, 86, 0.3)
+
+@media (max-width: 1199px)
+  .main-nav--closed .main-nav__list
+    display: none
+  .main-nav--opened .main-nav--list
+    display: block
+    padding-top: 70px
+

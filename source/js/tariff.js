@@ -1,17 +1,16 @@
 'use strict'
 
-var slides = document.querySelectorAll('.tariff__list'),
-	currentSlide = 0,
-	//slideInterval = setInterval(nextSlide,4000),
-	//playing = true,
-	activeButton = document.getElementById('active'),
-	next = document.getElementById('next'),
-	previous = document.getElementById('previous');
+var navMain = document.querySelector('.main-nav'),
+    navToggle = document.querySelector('.main-nav__toggle');
 
-function nextSlide() {
- goToSlide(currentSlide+1);
-}
+  navMain.classList.remove('main-nav--nojs');
 
-function previousSlide() {
- goToSlide(currentSlide-1);
-}
+  navToggle.addEventListener('click', function() {
+    if (navMain.classList.contains('main-nav--closed')) {
+      navMain.classList.remove('main-nav--closed');
+      navMain.classList.add('main-nav--opened');
+    } else {
+      navMain.classList.add('main-nav--closed');
+      navMain.classList.remove('main-nav--opened');
+    }
+  });
