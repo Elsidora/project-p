@@ -60,3 +60,13 @@ a
 
 
 @import "sections/*.sass"
+
+@media (min-width: $tablet-width)
+  .container
+    width: $tablet-width
+
+@media (min-width: $desktop-width)
+  .container
+    width: $desktop-width
+    padding: 0 130px
+
