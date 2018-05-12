@@ -1,6 +1,7 @@
 .downloads
-  padding: 29px 20px
+  padding: 29px 0
   background-color: $color-header
+  margin-top: 396px
   margin-bottom: 25px
 
   &__link
@@ -36,4 +37,30 @@
     width: 47px
     height: 56px
     background-color: red
+
+@media (min-width: $tablet-width)
+  .downloads
+    display: block
+    width: 300px
+    margin-top: 0
+    background-color: transparent
+    &__inner
+      display: flex
+      flex-direction: column
+
+    &__link
+      display: block
+      width: 300px
+      padding: 10px 30px
+      margin-bottom: 15px
+      font-family: "Open Sans", "Arial", sans-serif
+      font-size: 18px
+      font-weight: 700
+      line-height: 18px
+  .links
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-around
+    width: 300px
+    padding: 20px
 

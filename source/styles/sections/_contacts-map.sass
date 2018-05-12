@@ -38,3 +38,32 @@
   font-size: 24px
   text-align: center
 
+@media (min-width: $tablet-width)
+  .contacts
+    background-image: url("../img/map-tablet.jpg")
+    background-repeat: no-repeat
+    background-position: center
+    min-height: 848px
+    margin-top: 0
+    padding-top: 55px
+    &__inner
+      padding-bottom: 0
+    &__title
+      width: $tablet-width
+      font-size: 40px
+      line-height: 50px
+      margin-top: -110px
+      padding: 44px 45px 35px
+      color: $color-menu-mobile
+    &__info
+      display: flex
+      flex-wrap: wrap
+      justify-content: center
+      padding-bottom: 55px
+
+    &__block
+      margin-bottom: 45px
+      width: 310px
+      &:nth-of-type(3)
+        width: 220px
+

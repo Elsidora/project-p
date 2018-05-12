@@ -28,3 +28,24 @@
     &:active
       border: 2px solid #f2f2f2
 
+@media (min-width: $tablet-width)
+  .page-footer
+    min-height: 127px
+    margin-top: -127px
+    background-color: #ffffff
+    &--index
+      display: block
+    &__inner
+      display: flex
+      justify-content: space-between
+      width: $tablet-width
+      padding: 0 20px
+      margin: 0 auto
+    &__logo-block
+      padding: 38px 0 49px
+    &__copyright
+      margin-top: 50px
+
+  .social
+    padding: 39px 0
+

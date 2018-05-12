@@ -137,13 +137,13 @@
 
   .main-nav
     width: $tablet-width
-    min-height: 110px
+    min-height: 111px
     outline: 1px solid yellow
     &__list
       padding-top: 109px
     &__item
       width: $tablet-width
-      padding: 15px 0
+      padding: 15px 0 14px
     &__toggle
       height: 109px
     &--closed .main-nav__toggle::before
@@ -182,12 +182,6 @@
       font-weight: 400
       line-height: 18px
       text-transform: none
-      &:not(.main-nav__link--active):hover
-        color: $color-form
-      &:not(.main-nav__link--active):active
-        color: $color-form-rgba
-
-
     &__toggle
       display: none
 

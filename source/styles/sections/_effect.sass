@@ -1,2 +1,36 @@
 .effect
   display: none
+
+@media (min-width: $tablet-width)
+  .effect
+    display: block
+    &__inner
+      width: $tablet-width
+      padding: 0 10px
+      display: flex
+      justify-content: space-between
+      background: #ffffff
+      margin-top: -70px
+      padding: 60px 20px 50px
+    &__image
+      width: 310px
+    &__description
+      width: 310px
+      text-align: left
+      margin: 0
+    &__title
+      width: 170px
+      padding: 38px 0 0
+      line-height: 37px
+      font-weight: 700
+      font-size: 30px
+    &__paragraph
+      width: 300px
+      padding: 9px 0
+      line-height: 24px
+      color: $color-menu-mobile
+    &__link
+      color: $color-form
+      text-decoration: underline
+
+

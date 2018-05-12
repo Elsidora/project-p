@@ -6,12 +6,11 @@
     width: 836px
     margin: 0 auto
   &__table
-    background: #ffffff
     border-collapse: collapse
     margin-bottom: 35px
   &__list
     width: 276px
-    border-left: 2px solid #f1f1f1
+
   &__cost
     display: block
     font-weight: 300
@@ -22,7 +21,8 @@
   &__item
     padding: 15px 20px
     text-transform: uppercase
-    border-bottom: 2px solid  #f1f1f1
+    background: #ffffff
+    border: 1px solid  #f1f1f1
     &--title
       padding: 17px 20px 21px
       font-weight: 700
@@ -66,3 +66,51 @@
         transform: rotate(-45deg)
       &::after
         transform: rotate(45deg)
+
+td:nth-of-type(1)
+      display: none
+
+@media (min-width: $tablet-width)
+  .tariff
+    padding: 87px 0 90px
+    min-height: 218px
+    &__toggles
+      display: none
+    &__inner
+      width: 620px
+    &__list
+      width: 153px
+
+    &__cost
+      font-size: 18px
+    &__item
+      text-transform: none
+      padding: 8px 15px 7px
+      &--title
+        font-size: 16px
+        text-transform: none
+        padding: 10px 15px 9px
+      &--yes,
+      &--no
+        font-size: 0
+      &--yes
+        position: relative
+        &::before
+          left: 65px
+          bottom: 21px
+        &::after
+          left: 58px
+          bottom: 16px
+      &--no
+        position: relative
+        &::before,
+        &::after
+          left: 60px
+          bottom: 23px
+
+  td:nth-of-type(1)
+    display: block
+  td:nth-of-type(1) li:nth-of-type(1)
+    display: block
+    min-height: 79px
+    background: #f2f2f2

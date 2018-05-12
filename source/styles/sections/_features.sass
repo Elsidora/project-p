@@ -2,7 +2,7 @@
   //background-image: linear-gradient(135deg, #ffffff 15%, #f2f2f2 85%)
   &__inner
     background-color: #f2f2f2
-    padding-bottom: 165px
+    padding-bottom: 55px
   &__title
     width: 320px
     margin: 0 auto
@@ -40,4 +40,59 @@
       background-image: url("http://placehold.it/157x320")
       background-repeat: no-repeat
 
+@media (min-width: $tablet-width)
+  .features
+    width: 660px
+    margin: 0 auto
+    margin-top: 45px
+    outline: 1px solid brown
+    &__inner
+      background: none
+    &__inner-list
+      display: flex
+      justify-content: space-between
+      min-height: 547px
+      background-color: #f2f2f2
+    &__title
+      width: $tablet-width
+      margin: 0 auto
+      font-size: 40px
+      line-height: 49px
+      text-align: center
+      padding: 0 36px
+
+    &__list
+      width: 310px
+      padding: 45px 0
+      margin: 0
+      &--paragraph
+        order: 2
+  p.features__title
+    padding: 0 40px
+    margin-bottom: 50px
+
+  .feature
+    padding: 22px 0 10px
+    &__title
+      text-align: left
+      font-weight: 700
+      font-size: 18px
+      line-height: 10px
+      padding: 11px 0 18px
+    &__description
+      text-align: left
+      line-height: 24px
+      color: $color-menu-mobile
+      padding: 0
+    &--mobile
+      position: relative
+      &::before
+        position: absolute
+        content: ''
+        width: 268px
+        height: 547px
+        top: -330px
+        left: -310px
+        background-image: url("http://placehold.it/268x547")
+        background-repeat: no-repeat
 
