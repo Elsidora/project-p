@@ -1,7 +1,7 @@
 .downloads
   padding: 29px 0
   background-color: $color-header
-  margin-top: 396px
+  margin-top: 395px
   margin-bottom: 25px
   &__inner
     display: flex
@@ -70,3 +70,22 @@
     padding: 20px
     margin-bottom: 16px
 
+@media (min-width: $desktop-width)
+  .downloads
+    margin-top: 0
+    background-color: transparent
+    &__inner
+      padding: 0
+
+    &__link
+      width: 305px
+      padding: 15px 30px
+      margin: 0
+      margin-bottom: 50px
+      font-family: "Open Sans", "Arial", sans-serif
+      font-size: 21px
+    &__description
+      width: 300px
+      font-size: 18px
+  .links
+    margin-bottom: 35px

@@ -26,7 +26,9 @@
     margin: 0 auto
     margin-top: -109px
     min-height: 729px
-    background: blue
+    background-image: url("../img/promo-tablet.jpg")
+    background-repeat: no-repeat
+    background-position: center top
     display: flex
     justify-content: space-between
     &__inner
@@ -49,6 +51,27 @@
         line-height: 60px
         width: $tablet-width
         padding: 112px 80px
+
+@media (min-width: $desktop-width)
+  .promo
+    width: $desktop-width
+    padding: 0 130px
+    margin-top: -110px
+    min-height: 853px
+    background-image: url("../img/promo-desktop.jpg")
+    background-repeat: no-repeat
+    background-position: center top
+    &__inner
+      width: 305px
+    &__title
+      display: block
+      width: 305px
+      text-align: center
+      font-weight: 300
+      font-size: 50px
+      line-height: 59px
+      padding: 147px 43px 25px
+
 
 
 
