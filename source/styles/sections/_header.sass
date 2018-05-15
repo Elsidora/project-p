@@ -22,8 +22,6 @@
   width: 320px
   margin: 0 auto
   min-height: 66px
-  //margin-left: -75px
-  outline: 1px solid red
 
   &__list
     margin: 0
@@ -33,7 +31,6 @@
 
   &__item
     width: 320px
-
     border-top: 1px solid rgba(255, 255, 255, 0.2)
     border-bottom: 1px solid #000000
     padding: 15px 0
@@ -55,27 +52,23 @@
     top: 0
     right: 0
     z-index: 2
-
     display: block
     width: 70px
     height: 65px
-
     background-color: transparent
-
     cursor: pointer
     border: none
+
   &--closed .main-nav__toggle::before
     content: ""
-
     position: absolute
     top: 23px
     left: 0
-
     width: 50px
     height: 3px
-
     background-color: #ffffff
     box-shadow: 0 8px 0 0 #ffffff, 0 16px 0 0 #ffffff
+
   &--closed .main-nav__toggle:hover::before
     background-color: $color-form
     box-shadow: 0 8px 0 0 $color-form, 0 16px 0 0 $color-form
@@ -86,14 +79,11 @@
   &--opened .main-nav__toggle::before,
   &--opened .main-nav__toggle::after
     content: ""
-
     position: absolute
     top: 30px
     right: 20px
-
     width: 34px
     height: 4px
-
     background-color: #ffffff
 
   &--opened .main-nav__toggle::before
@@ -138,7 +128,6 @@
   .main-nav
     width: $tablet-width
     min-height: 111px
-    outline: 1px solid yellow
     &__list
       padding-top: 109px
     &__item
@@ -156,7 +145,6 @@
   .page-header
     &__inner
       width: $desktop-width
-      outline: 1px solid green
     &__logo
       margin: 27px 0 43px
 
@@ -170,7 +158,6 @@
       border: none
       padding: 20px 0
       margin-left: 106px
-      outline: 1px solid orange
     &__item
       width: auto
       padding: 22px 0
