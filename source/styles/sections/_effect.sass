@@ -6,14 +6,12 @@
     display: block
     &__inner
       width: $tablet-width
-      padding: 0 10px
       display: flex
+      flex-direction: row-reverse
       justify-content: space-between
       background: #ffffff
       margin-top: -184px
       padding: 51px 20px 50px
-    &__image
-      width: 310px
     &__description
       width: 310px
       text-align: left
@@ -32,5 +30,30 @@
     &__link
       color: $color-form
       text-decoration: underline
+
+@media (min-width: $desktop-width)
+  .effect
+    &__inner
+      width: $desktop-width
+      margin-top: 0
+      background: #f2f2f2
+      padding: 55px 120px 110px
+    &__description
+      width: 602px
+      padding: 0 20px
+    &__title
+      width: 602px
+      padding: 38px 0 15px
+      line-height: 30px
+    &__paragraph
+      width: 521px
+      padding: 9px 0 31px
+      font-size: 18px
+      line-height: 30px
+    &__link
+      font-weight: 400
+      font-size: 18px
+      line-height: 30px
+      font-family: "Open Sans", "Arial", sans-serif
 
 
