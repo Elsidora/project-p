@@ -158,4 +158,47 @@
       height: 400px
       outline: 2px solid pink
 
+@media (min-width: $desktop-width)
+  .post
+    margin-bottom: 225px
+    &__inner
+      background: none
+      padding-top: 20px
+      padding-bottom: 40px
+    &__form
+      background: #f2f2f2
+      padding: 60px
+      margin: 0 10px
+    &__form picture
+      width: 390px
+      padding-left: 20px
+    &__tools-wrapper
+      display: flex
+      flex-direction: row
+      flex-wrap: wrap
+      justify-content: space-between
+      width: 410px
+    &__tools-list
+      margin-bottom: 140px
+    &__tool-wrapper
+      display: flex
+      justify-content: space-between
+      width: 410px
+      padding: 10px 0 29px
+      position: relative
+      border-bottom: 1px solid #d0d0d0
+      margin-bottom: 15px
+    &__filter
+      padding: 0 30px
+    &__filter-scale
+      width: 290px
+
+    &__post,
+    &__cancel
+      width: 185px
+      padding: 0
+    &__post
+      margin-bottom: 0
+
+
 

@@ -103,6 +103,38 @@
     height: 300px
     outline: 2px solid pink
 
+@media (min-width: $desktop-width)
+  .panorama-day
+    margin-bottom: 52px
+    &__picture
+      width: $desktop-width
+      min-height: 506px
+
+    &__comment
+      display: flex
+      flex-wrap: wrap
+      justify-content: space-between
+      padding: 31px 26px 14px
+      margin: 0 10px
+    &__time
+      margin-left: 0
+      margin-top: 0
+    &__prefer
+      line-height: 12px
+      margin-right: 0
+
+  .photos
+    margin-bottom: 8px
+    &__inner
+      margin: 0 10px
+
+  .photo
+    margin: 0 0 52px
+
+  .photo picture
+    height: 400px
+
+
 
 
 
