@@ -88,4 +88,74 @@
       background-color: #b5b9be
       color: rgba(255, 255, 255, 0.3)
 
+@media (min-width: $tablet-width)
+  .post
+    &__description
+      width: $tablet-width
+      font-size: 18px
+      padding: 20px 0 21px
+      margin-bottom: 46px
+    &__inner
+      padding-top: 58px
+      padding-bottom: 54px
+      margin-bottom: 127px
+    &__form
+      display: flex
+      justify-content: space-between
+    &__tools-wrapper
+      display: flex
+      flex-direction: column
+      width: 270px
+    &__tools-list
+      display: flex
+      flex-wrap: wrap
+      flex-direction: column
+      justify-content: space-around
+      padding-bottom: 0
+      border-bottom: none
+      margin-bottom: 50px
+
+
+
+    &__tool-wrapper
+      display: flex
+      justify-content: space-between
+      width: 250px
+      padding: 20px 0 30px
+      position: relative
+      border-bottom: 1px solid #d0d0d0
+      margin-bottom: 15px
+    &__icon
+      margin-bottom: 0
+      &::before
+        width: 24px
+        height: 20px
+        left: 0
+        bottom: -9px
+    &__filter
+      position: relative
+      &--contrast,
+      &--bright
+        display: block
+      &--size
+        position: relative
+        left: 0
+        bottom: 0
+    &__filter-scale
+      width: 203px
+      background: $color-menu-mobile
+    &__filter-toggle
+      left: 150px
+    &__post,
+    &__cancel
+      width: 260px
+    &__post
+      margin-bottom: 30px
+
+    &__form picture
+      display: block
+      width: 300px
+      height: 400px
+      outline: 2px solid pink
+
 
