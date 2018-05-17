@@ -27,7 +27,7 @@
     </section>
 
       <div class="page-content__inner">
-      <p class="page-content__prize call-to-action">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!</p>
+      <p class="page-content__prize call-to-action">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</p>
       <form class="form" action="https://echo.htmlacademy.ru" method="post">
         <fieldset class="form__full-name">
           <ul class="form__list container">
@@ -37,7 +37,7 @@
             </li>
             <li class="form__item">
               <label class="form__label" for="name">Имя:</label>
-              <input class="form__input" type="text" id="name" name="name" placeholder="Введите ваше имя">
+              <input class="form__input form__input--name" type="text" id="name" name="name" placeholder="Введите ваше имя">
             </li>
             <li class="form__item">
               <label class="form__label" for="patronymic">Отчество:</label>
@@ -49,27 +49,27 @@
           <div class="container">
           <legend class="form__title form__title--checkbox">Ваши безбашенные достижения в путешествии</legend>
           <ul class="form__list">
-            <li class="form__item margin">
+            <li class="form__item-button margin">
               <input type="checkbox" class="form__input-checkbox" id="self" name="self" checked>
               <label for="self" class="form__label-button">Сделал селфи с акулой</label>
             </li>
-            <li class="form__item">
+            <li class="form__item-button">
               <input type="checkbox" class="form__input-checkbox" id="beach" name="beach" checked>
               <label for="beach" class="form__label-button">Обгорел на пляже</label>
             </li>
-            <li class="form__item">
+            <li class="form__item-button">
               <input type="checkbox" class="form__input-checkbox" id="norris" name="norris">
               <label for="norris" class="form__label-button">Видел Чака Норриса</label>
-            <li class="form__item">
-            <li class="form__item">
+            </li>
+            <li class="form__item-button">
               <input type="checkbox" class="form__input-checkbox" id="souvenir" name="souvenir">
               <label for="souvenir" class="form__label-button">Накупил сувениров</label>
             </li>
-            <li class="form__item">
+            <li class="form__item-button">
               <input type="checkbox" class="form__input-checkbox" id="turret" name="turret" checked>
               <label for="turret" class="form__label-button">Удержал башню</label>
             </li>
-            <li class="form__item">
+            <li class="form__item-button">
               <input type="checkbox" class="form__input-checkbox" id="hotel" name="hotel">
               <label for="hotel" class="form__label-button">Разгромил отель</label>
             <li class="form__item">
@@ -77,12 +77,13 @@
           </div>
         </fieldset>
         <fieldset class="form__contacts">
+          <legend class="form__title form__title--contacts">Контактная информация</legend>
           <ul class="form__list container">
-            <li class="form__item">
+            <li class="form__item form__item--contacts">
               <label class="form__label form__label--contact" for="phone">Номер телефона</label>
               <input class="form__input" type="tel" id="phone" name="phone" placeholder="Номер, пожалуйста" pattern="[0-9]{3}-[0-9]{2}-[0-9]{2}" required>
             </li>
-            <li class="form__item">
+            <li class="form__item form__item--contacts">
               <label class="form__label form__label--contact" for="email">Адрес почты</label>
               <input class="form__input" type="email" id="email" name="email" placeholder="Введите почту*" pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})" required>
             </li>
@@ -92,14 +93,14 @@
           <div class="container">
           <legend class="form__title">С каким приложением путешествовали?</legend>
           <ul class="form__list">
-            <li class="form__item margin">
+            <li class="form__item-button margin">
               <input type="radio" class="form__input-radio" id="ios" name="radio" value="ios" checked>
               <label for="ios" class="form__label-button form__label-button--radio">Pink для iOS</label>
-            <li class="form__item">
+            <li class="form__item-button">
               <input type="radio" class="form__input-radio" id="android" name="radio" value="android">
               <label for="android" class="form__label-button form__label-button--radio">Pink на Android</label>
             </li>
-            <li class="form__item">
+            <li class="form__item-button">
               <input type="radio" class="form__input-radio" id="windows" name="radio" value="windows">
               <label for="windows" class="form__label-button form__label-button--radio" >Windows Phone</label>
             </li>
