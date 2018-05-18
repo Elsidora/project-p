@@ -94,6 +94,7 @@
             <li class="form__item-button margin">
               <input type="radio" class="form__input-radio" id="ios" name="radio" value="ios" checked>
               <label for="ios" class="form__label-button form__label-button--radio">Pink для iOS</label>
+            </li>
             <li class="form__item-button">
               <input type="radio" class="form__input-radio" id="android" name="radio" value="android">
               <label for="android" class="form__label-button form__label-button--radio">Pink на Android</label>
@@ -110,9 +111,12 @@
             <textarea class="form__area-description" name="" id="" cols="25" rows="5">Можно прям в красках, не стесняясь в выражениях</textarea>
           </div>
         </fieldset>
-        <input type="submit" value="Отправить форму">
+        <div class="form__button container">
+          <input type="submit" value="Отправить форму">
+          <span class="form__required-field"><sup>*</sup> - Обязательные поля</span>
+        </div>
       </form>
-      <span class="page-content__required-field"><sup>*</sup> - Обязательные поля</span>
+
     </div>
   </main>
   <footer class="page-footer">
