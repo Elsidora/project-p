@@ -185,24 +185,27 @@ fieldset
       padding: 0 20px
       margin: 0 auto
     &__item
-      //display: flex
-      //justify-content: space-between
       width: 620px
       padding: 28px 0 27px
       margin-bottom: 0
       &--contacts
         display: flex
         flex-direction: column-reverse
+
+        padding: 20px 0 12px
+        padding-left: 39px
+
     &__label
       display: inline-block
       padding: 0
       padding-right: 16px
       margin-bottom: 0
+      &--contact
+        margin-top: 10px
+        padding-left: 20px
     &__input
       width: 522px
       margin-bottom: 0
-      &--name
-        width: 563px
     &__input-radio
       font-size: 18px
       line-height: 18px
@@ -226,8 +229,8 @@ fieldset
     &__contacts
       order: 3
       margin: 0 auto
-      margin-bottom: 30px
-      padding: 0
+      margin-bottom: 55px
+      padding: 18px 0
     &__area
       order: 5
       padding: 0
@@ -256,6 +259,11 @@ fieldset
 
   input[type="submit"]
     order: 6
+
+  .form__contacts input
+    width: 502px
+  .form__full-name input[name="name"]
+    width: 563px
 
   fieldset
     position: relative
