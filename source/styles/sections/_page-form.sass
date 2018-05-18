@@ -25,6 +25,10 @@
 
 .form
   position: relative
+  &__list
+    width: 320px
+    padding: 0 20px
+    margin: 0 auto
   &__label
     display: block
     color: $color-form
@@ -74,6 +78,7 @@
     position: absolute
     width: 280px
     top: 35px
+    left: calc(50% - 140px)
     color: $color-form
     font-size: 14px
     line-height: 18px
@@ -158,6 +163,8 @@ fieldset
 
 @media (min-width: $tablet-width)
   .page-content
+    &--form
+      margin-bottom: 127px
     &__inner
       margin-top: -290px
     &__prize
@@ -173,6 +180,10 @@ fieldset
     position: relative
     display: flex
     flex-direction: column
+    &__list
+      width: 620px
+      padding: 0 20px
+      margin: 0 auto
     &__item
       //display: flex
       //justify-content: space-between
@@ -196,52 +207,52 @@ fieldset
       font-size: 18px
       line-height: 18px
     &__full-name
-      padding: 7px 20px 0
+      padding: 9px 20px
       border: none
+      margin-bottom: 23px
     &__checkbox
       order: 4
       padding: 30px 0 27px
       background: #ffffff
+      margin: 0 auto
+      margin-bottom: 20px
     &__radio
       background: #ffffff
       order: 2
-      //padding: 0 20px
-      //margin: 0 auto
+      padding: 0
+      padding-bottom: 56px
       margin: 0 auto
-      margin-bottom: 70px
-      width: 620px
-      min-height: 296px
+      margin-bottom: 60px
     &__contacts
       order: 3
-      width: 620px
       margin: 0 auto
+      margin-bottom: 30px
       padding: 0
     &__area
       order: 5
-      padding: 41px 20px 43px
+      padding: 0
+      margin: 0 auto
     &__title
       position: relative
-      width: auto
-      //top: 35px
-      font-size: 14px
-      line-height: 18px
-      text-transform: uppercase
-      text-align: center
+      width: 374px
+      top: 0
+      left: 0
       padding: 0
       &--contacts
         display: block
     &__label-button
-      padding: 0
-      padding-left: 120px
+      padding: 17px 0 0
+      padding-left: 100px
       margin: 0
       &::before
-        top: -3px
-        left: 60px
+        top: 12px
+        left: 40px
       &::after
-        left: 68px
+        left: 48px
       &--radio
         &::after
-          left: 71px
+          top: 23px
+          left: 51px
 
   input[type="submit"]
     order: 6
@@ -249,6 +260,8 @@ fieldset
   fieldset
     position: relative
     border: 1px solid #f2f2f2
+  .margin
+    margin-top: 0
 
 @media (min-width: $desktop-width)
   .page-content
