@@ -181,6 +181,7 @@ fieldset
     position: relative
     display: flex
     flex-direction: column
+
     &__list
       width: 620px
       padding: 0 20px
@@ -193,8 +194,7 @@ fieldset
         display: flex
         flex-direction: column-reverse
 
-        padding: 20px 0 12px
-        padding-left: 39px
+        padding: 20px 39px 12px
 
     &__label
       display: inline-block
@@ -214,6 +214,8 @@ fieldset
       padding: 9px 20px
       border: none
       margin-bottom: 23px
+    &__full-name ul
+      padding: 0
     &__checkbox
       order: 4
       padding: 0
@@ -283,7 +285,7 @@ fieldset
 
   fieldset
     position: relative
-    border: 1px solid #f2f2f2
+    border: 1px solid #b0b0b0
   .margin
     margin-top: 0
 
@@ -291,6 +293,7 @@ fieldset
   .page-content
     &__inner
       margin-top: -460px
+      background: #ffffff
     &__prize
       width: $desktop-width
       font-size: 18px
@@ -300,11 +303,143 @@ fieldset
       padding: 93px 290px 86px
 
   .form
+
+
+
+    &__input-radio
+      font-size: 18px
+      line-height: 18px
+    &__full-name
+      padding: 0
+      border: none
+      margin-bottom: 23px
+    &__checkbox
+      order: 4
+      padding: 0
+      background: #ffffff
+      margin: 0 auto
+      margin-bottom: 53px
+    &__radio
+      background: #ffffff
+      order: 2
+      padding: 0
+      padding-bottom: 56px
+      margin: 0
+      margin-bottom: 60px
+    &__contacts
+      order: 3
+      margin: 0
+      margin-bottom: 55px
+      padding: 18px 0
+    &__area
+      order: 5
+      padding: 0
+      margin: 0
+      margin-bottom: 67px
+    &__area-description
+      display: block
+      width: 820px
+      margin: 37px auto 48px
+    &__title
+      position: relative
+      width: 374px
+      top: 0
+      left: 0
+      padding: 0
+      &--contacts
+        display: block
+
+  //чистовик
+
+  .form
     display: flex
     flex-direction: row
     flex-wrap: wrap
     justify-content: space-between
+
+    width: 1200px
+    padding: 0 130px
+    padding-top: 32px
+    margin: 0 auto
+
+
+    &__list
+      width: 940px
+      padding: 0
+      margin: 0
+
+
+
+    &__label
+      margin-right: 16px
+      padding-right: 0
+
+
     &__input
-      width: 335px
+      width: 340px
+      margin-bottom: 0
+
+    &__contacts input
+      width: 374px
+
+    //&__item
+      width: 438px
+      padding: 28px 0 27px
+      margin-bottom: 0
+      &--contacts
+        padding: 0
+
+    //&__contacts ul
+      padding: 0 40px
+
+    &__full-name ul,
+    &__radio ul
+      width: 434px
+      background: none
+      margin: 0
+
+    &__contacts ul
+      padding: 0 20px
+      display: flex
+      flex-direction: row
+      flex-wrap: wrap
+      justify-content: space-between
+
+    &__checkbox ul
+      display: flex
+      flex-direction: column
+      flex-wrap: wrap
+
+      height: 231px
+
+    //&__contacts ul
+      display: flex
+      flex-direction: row
+      flex-wrap: wrap
+      justify-content: space-between
+      padding: 0 21px
+
     &__radio
-      width: 435px
+      margin-top: 13px
+
+    &__label-button
+      padding-left: 135px
+      &::before
+        top: 13px
+        left: 76px
+      &::after
+        top: 25px
+        left: 84px
+      &--radio
+        &::after
+          top: 24px
+          left: 87px
+
+    &__checkbox label
+      padding-left: 120px
+
+
+
+  .form__full-name input[name="name"]
+    width: 379px
+
