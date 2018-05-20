@@ -311,35 +311,21 @@ fieldset
       padding: 93px 290px 86px
 
   .form
-
-
-
-    &__input-radio
-      font-size: 18px
-      line-height: 18px
     &__full-name
       padding: 0
-      border: none
-      margin-bottom: 23px
     &__radio
-      background: #ffffff
-      order: 2
-      padding: 0
       padding-bottom: 56px
       margin: 0
+      margin-top: 13px
       margin-bottom: 60px
+    &__contacts
+      margin-bottom: 40px
+
+    &__checkbox
+      padding: 0
     &__area-description
-      display: block
       width: 820px
       margin: 37px auto 48px
-    &__title
-      position: relative
-      width: 374px
-      top: 0
-      left: 0
-      padding: 0
-      &--contacts
-        display: block
 
   //чистовик
 
@@ -374,15 +360,11 @@ fieldset
     &__contacts input
       width: 374px
 
-    //&__item
+    &__item
       width: 438px
-      padding: 28px 0 27px
-      margin-bottom: 0
       &--contacts
-        padding: 0
-
-    //&__contacts ul
-      padding: 0 40px
+        width: 375px
+        padding: 20px 0 12px
 
     &__full-name ul,
     &__radio ul
@@ -390,29 +372,29 @@ fieldset
       background: none
       margin: 0
 
-    &__contacts ul
-      padding: 0 20px
-      display: flex
-      flex-direction: row
-      flex-wrap: wrap
-      justify-content: space-between
-
     &__checkbox ul
       display: flex
       flex-direction: column
       flex-wrap: wrap
 
       height: 231px
+      outline: 2px solid blue
+
+    &__checkbox li
+      outline: 2px solid red
+      text-align: center
+      padding: 0
 
     &__contacts ul
+      outline: 2px solid pink
       display: flex
       flex-direction: row
       flex-wrap: wrap
       justify-content: space-between
-      padding: 0 21px
+      padding: 0 60px
 
-    &__radio
-      margin-top: 13px
+    &__contacts li
+      outline: 2px solid green
 
     &__button
       width: 940px
@@ -437,7 +419,8 @@ fieldset
       padding-left: 120px
 
 
-
+  .form__contacts input
+    width: 374px
   .form__full-name input[name="name"]
     width: 379px
 
