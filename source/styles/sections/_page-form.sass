@@ -8,8 +8,10 @@
     margin: 0 auto
     text-align: center
     background: #ffffff
-    padding: 45px 20px 25px
+    padding: 45px 20px 20px
     color: #000000
+  &__prize span
+    font-size: 0
   &__text
     width: 320px
     margin: 0 auto
@@ -56,24 +58,27 @@
 
   &__full-name
     background: #ffffff
-    padding: 10px 20px 27px
+    padding: 10px 20px 25px
   &__checkbox
     background-color: #f2f2f2
     padding: 30px 0 27px
   &__radio
     background-color: #f2f2f2
     padding: 26px 0 9px
+    margin-bottom: 5px
   &__area
-    padding: 41px 20px 43px
+    padding: 41px 20px 38px
   &__area-description
     font-size: 18px
     line-height: 30px
     padding: 15px 20px 28px
-    margin-top: 35px
+    width: 278px
+    min-height: 200px
+    margin-top: 30px
   &__title
     position: absolute
     width: 280px
-    top: 35px
+    top: 37px
     left: calc(50% - 140px)
     color: $color-form
     font-size: 14px
@@ -136,6 +141,8 @@
     text-transform: uppercase
     text-align: center
     padding: 20px 0 15px
+  &__required-field span
+    font-size: 0 //ТАК ДЕЛАТЬ НЕЛЬЗЯ!!!
 input[type="checkbox"]:checked + label::after
   width: 22px
   height: 10px
@@ -176,6 +183,8 @@ fieldset
       width: $tablet-width
       font-size: 18px
       padding: 90px 60px 36px
+    &__prize span
+      font-size: 18px
     &__text
       width: $tablet-width
       font-size: 18px
@@ -223,9 +232,10 @@ fieldset
     &__checkbox
       order: 4
       padding: 0
+      padding-bottom: 50px
       background: #ffffff
       margin: 0 auto
-      margin-bottom: 53px
+      margin-bottom: 57px
     &__radio
       background: #ffffff
       order: 2
@@ -242,11 +252,12 @@ fieldset
       order: 5
       padding: 0
       margin: 0 auto
-      margin-bottom: 67px
+      margin-bottom: 69px
     &__area-description
       display: block
       width: 500px
-      margin: 37px auto 48px
+      min-height: 193px
+      margin: 37px auto 50px
     &__title
       position: relative
       width: 374px
@@ -279,10 +290,11 @@ fieldset
     &__required-field
       width: 300px
       text-align: right
+      padding: 18px 0 10px
   input[type="submit"]
     margin: 0
     width: 300px
-    padding: 19px 20px
+    padding: 15px 20px
 
   .form__contacts input
     width: 502px
@@ -319,13 +331,18 @@ fieldset
       margin-top: 13px
       margin-bottom: 60px
     &__contacts
-      margin-bottom: 40px
+      margin-bottom: 55px
 
     &__checkbox
       padding: 0
+      margin-bottom: 57px
+    &__area
+      margin-bottom: 64px
     &__area-description
       width: 820px
-      margin: 37px auto 48px
+      min-height: 125px
+      margin: 37px auto 45px
+
 
   //чистовик
 
@@ -364,7 +381,7 @@ fieldset
       width: 438px
       &--contacts
         width: 375px
-        padding: 20px 0 12px
+        padding: 15px 0 0
 
     &__full-name ul,
     &__radio ul
@@ -376,31 +393,26 @@ fieldset
       display: flex
       flex-direction: column
       flex-wrap: wrap
-
-      height: 231px
-      outline: 2px solid blue
-
-    &__checkbox li
-      outline: 2px solid red
-      text-align: center
-      padding: 0
+      padding: 0 7px 0 60px
+      height: 221px
 
     &__contacts ul
-      outline: 2px solid pink
       display: flex
       flex-direction: row
       flex-wrap: wrap
       justify-content: space-between
       padding: 0 60px
 
-    &__contacts li
-      outline: 2px solid green
-
     &__button
       width: 940px
+      margin-bottom: 70px
 
     &__required-field
       width: 320px
+      padding: 18px 0 15px
+
+    &__required-field span
+      font-size: 14px
 
     &__label-button
       padding-left: 135px
@@ -416,11 +428,22 @@ fieldset
           left: 87px
 
     &__checkbox label
-      padding-left: 120px
+      padding-left: 60px
+      &::before
+        top: 13px
+        left: 0px
+      &::after
+        top: 25px
+        left: 8px
 
 
   .form__contacts input
     width: 374px
   .form__full-name input[name="name"]
     width: 379px
+  input[type="submit"]
+    margin: 0
+    width: 300px
+    padding: 18px 20px
+
 
