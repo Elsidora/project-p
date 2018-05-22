@@ -1,18 +1,27 @@
 .page-footer
+  &__inner
+    width: 280px
+    margin: 0 auto
+    padding: 40px 0
+    text-align: center
+
   &__logo-block
     margin-bottom: 9px
   &__copyright
+    width: 130px
+    margin: 0 auto
+    text-align: left
     margin-top: 20px
+  &__link
+    font-size: 0
   &--index
     display: none
-  &__inner
-    padding: 40px
-    text-align: center
+
 .social
   display: flex
   flex-wrap: wrap
-  justify-content: space-around
-  padding: 20px 25px
+  justify-content: space-between
+  padding: 20px 50px
   &__btn
     position: relative
     display: inline-block
@@ -40,13 +49,14 @@
       justify-content: space-between
       width: $tablet-width
       padding: 0 20px
-      margin: 0 auto
     &__logo-block
       padding: 38px 0 49px
     &__copyright
+      margin: 0
       margin-top: 50px
 
   .social
+    width: 181px
     padding: 39px 0
 
 @media (min-width: $desktop-width)
@@ -57,12 +67,16 @@
       display: flex
       justify-content: space-between
       width: $desktop-width
-      padding: 0 120px
+      padding: 0 130px
       margin: 0 auto
     &__logo-block
       padding: 73px 0 84px
     &__copyright
+      width: 155px
       margin-top: 85px
+    &__text
+      font-size: 18px
+      line-height: 18px
 
   .social
     padding: 74px 0
