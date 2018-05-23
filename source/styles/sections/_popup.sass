@@ -1,4 +1,4 @@
-.popup-show
+.popup
   padding: 20px 0
   box-shadow: 0 5px 15px #e2e2e2
   &__info
@@ -17,3 +17,11 @@
     padding: 50px 0
   &__button
     @include button
+
+  &--yes,
+  &--no
+    display: none
+
+  &--show-yes,
+  &--show-no
+    display: block

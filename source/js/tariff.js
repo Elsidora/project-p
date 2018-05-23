@@ -3,6 +3,8 @@
 var navMain = document.querySelector('.main-nav'),
     navToggle = document.querySelector('.main-nav__toggle');
 
+
+
   navMain.classList.remove('main-nav--nojs');
 
   navToggle.addEventListener('click', function() {
@@ -14,3 +16,6 @@ var navMain = document.querySelector('.main-nav'),
       navMain.classList.remove('main-nav--opened');
     }
   });
+
+
+
