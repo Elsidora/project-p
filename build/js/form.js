@@ -19,9 +19,10 @@ var form = document.querySelector(".form"),
       popupNo.classList.add("popup--show");
       overlay.classList.add("popup-overlay--open")
     } else {
-      popupYes.classList.add("popup--show");
-      overlay.classList.add("popup-overlay--open");
-    }
+        e.preventDefault();
+        popupYes.classList.add("popup--show");
+        overlay.classList.add("popup-overlay--open");
+      }
   });
 
   window.addEventListener("keydown", function(e) {
