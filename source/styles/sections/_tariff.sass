@@ -1,9 +1,10 @@
 .tariff
-  background-color: #f2f2f2
+  background-color: #ffffff
+  background-image: linear-gradient(175deg, #ffffff 10%, #f2f2f2 10%)
   min-height: 280px
-  padding: 90px 0 45px
+  padding: 110px 0 45px
   &__inner
-    width: 836px
+    width: 280px
     margin: 0 auto
   &__table
     border-collapse: collapse
@@ -67,12 +68,14 @@
       &::after
         transform: rotate(45deg)
 
-td:nth-of-type(1)
+td:not(:nth-of-type(3))
       display: none
 
 @media (min-width: $tablet-width)
   .tariff
-    padding: 87px 0 90px
+    background-color: #ffffff
+    background-image: linear-gradient(176deg, #ffffff 15%, #f2f2f2 15%)
+    padding: 103px 0 90px
     min-height: 218px
     &__toggles
       display: none
@@ -108,8 +111,9 @@ td:nth-of-type(1)
           left: 60px
           bottom: 23px
 
-  td:nth-of-type(1)
-    display: block
+  td:not(:nth-of-type(3)),
+  td:nth-of-type(3)
+      display: inline-block
   td:nth-of-type(1) li:nth-of-type(1)
     display: block
     min-height: 79px
@@ -117,6 +121,7 @@ td:nth-of-type(1)
 
 @media (min-width: $desktop-width)
   .tariff
+
     padding: 150px 0 65px
     min-height: 280px
     &__inner
@@ -150,7 +155,7 @@ td:nth-of-type(1)
 
   td:nth-of-type(1)
     font-size: 18px
-    width: 233px
+    width: 232px
   td:nth-of-type(1) li:nth-of-type(1)
     min-height: 98px
 

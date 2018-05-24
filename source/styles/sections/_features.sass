@@ -1,7 +1,8 @@
 .features
-  //background-image: linear-gradient(135deg, #ffffff 15%, #f2f2f2 85%)
   &__inner
-    background-color: #f2f2f2
+
+    background-color: #ffffff
+    background-image: linear-gradient(174deg, #ffffff 7%, #f2f2f2 7%)
   &__inner-list
 
     padding-bottom: 163px
@@ -12,11 +13,11 @@
     font-weight: 300
     color: $color-menu-mobile
     text-align: center
-    padding: 14px 20px
+    padding: 19px 20px 9px
   &__list
-    margin-top: 18px
-    padding-top: 67px
-    min-height: 665px
+    margin-top: 0
+    padding-top: 90px
+    min-height: 688px
   &__item
     padding: 9px 0
     &--friends
@@ -47,16 +48,19 @@
   .features
     width: $tablet-width
     margin: 0 auto
-    margin-top: 45px
+    margin-top: 25px
     &__inner
-      background: none
       padding-bottom: 55px
+      background: none
     &__inner-list
+      background-color: #ffffff
+      background-image: linear-gradient(176deg, #ffffff 7%, #f2f2f2 7%)
       display: flex
       flex-direction: row-reverse
       justify-content: space-between
       min-height: 670px
-      background-color: #f2f2f2
+      margin-bottom: 10px
+      //background-color: #f2f2f2
     &__title
       width: $tablet-width
       margin: 0 auto
@@ -64,10 +68,11 @@
       line-height: 49px
       text-align: center
       padding: 0 36px
+      padding-top: 20px
 
     &__list
       width: 310px
-      padding: 45px 0
+      padding: 55px 0 43px
       margin: 0
       min-height: 0
     &__item
@@ -98,7 +103,7 @@
 
   p.features__title
     padding: 0 40px
-    margin-bottom: 50px
+    margin-bottom: 40px
 
 
 @media (min-width: $desktop-width)
@@ -116,8 +121,9 @@
 
     &__inner
       margin-top: 377px
-      background-color: #f2f2f2
+      background: none
       padding-bottom: 0
+      background-color: #f2f2f2
 
     &__inner-list
       position: relative
@@ -125,14 +131,15 @@
       flex-direction: column
       min-height: 327px
       padding-bottom: 0
+      background: none
       &::before
         position: absolute
         content: ''
         width: 1200px
         height: 714px
-        top: -308px
+        top: -328px
         left: 0
-        background-image: url("../img/back_desktop.png")
+        background-image: linear-gradient(176deg, #ffffff 15%, #f2f2f2 15%)
         background-repeat: no-repeat
         z-index: -1
     &__list
