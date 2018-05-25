@@ -4,8 +4,18 @@
     background-color: #ffffff
     background-image: linear-gradient(174deg, #ffffff 7%, #f2f2f2 7%)
   &__inner-list
-
+    position: relative
     padding-bottom: 163px
+    &::before
+      position: absolute
+      content: ""
+      width: 320px
+      height: 30px
+      bottom: -30px
+      left: calc(50% - 160px)
+
+      background-color: #ffffff
+      z-index: 2
   &__title
     width: 320px
     margin: 0 auto
@@ -53,14 +63,25 @@
       padding-bottom: 55px
       background: none
     &__inner-list
+      position: relative
       background-color: #ffffff
       background-image: linear-gradient(176deg, #ffffff 7%, #f2f2f2 7%)
       display: flex
       flex-direction: row-reverse
       justify-content: space-between
-      min-height: 670px
-      margin-bottom: 10px
-      //background-color: #f2f2f2
+      min-height: 510px
+      padding-bottom: 0
+      margin-bottom: 0
+      &::before
+        position: absolute
+        content: ""
+        width: 660px
+        height: 70px
+        bottom: -30px
+        left: calc(50% - 330px)
+
+        background-color: #ffffff
+        z-index: 2
     &__title
       width: $tablet-width
       margin: 0 auto
@@ -72,7 +93,7 @@
 
     &__list
       width: 310px
-      padding: 55px 0 43px
+      padding: 35px 0 28px
       margin: 0
       min-height: 0
     &__item
@@ -103,7 +124,7 @@
 
   p.features__title
     padding: 0 40px
-    margin-bottom: 40px
+    margin-bottom: 60px
 
 
 @media (min-width: $desktop-width)
