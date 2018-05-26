@@ -5,12 +5,40 @@
   .effect
     display: block
     &__inner
+      position: relative
       width: $tablet-width
       display: flex
       flex-direction: row-reverse
       justify-content: space-between
       background: #ffffff
       padding: 56px 20px 50px
+      &::before
+        position: absolute
+        content: ""
+        width: 238px
+        height: 276px
+        left: 20px
+        top: 20px
+        background: url("../img/timer-tablet.png")
+      &::after
+        position: absolute
+        content: ""
+        width: 206px
+        height: 206px
+        top: 73px
+        left: 38px
+
+        background: transparent
+        border: 16px solid $color-form
+        border-radius: 50%
+    &__number
+      width: 310px
+      color: $color-form
+      font-weight: 700
+      font-size: 96px
+      line-height: 150px
+      padding: 40px 65px 0
+
     &__description
       width: 310px
       text-align: left
@@ -37,6 +65,27 @@
       margin-top: 0
       background: #f2f2f2
       padding: 45px 120px 110px
+      &::before
+        width: 298px
+        height: 345px
+        left: 130px
+        top: -10px
+        background: url("../img/timer-desktop.png")
+      &::after
+        width: 256px
+        height: 256px
+        top: 56px
+        left: 151px
+        border: 19px solid $color-form
+
+    &__number
+      width: 310px
+      color: $color-form
+      font-weight: 700
+      font-size: 120px
+      line-height: 200px
+      padding: 33px 90px 0
+
     &__description
       width: 602px
       padding: 0 20px
