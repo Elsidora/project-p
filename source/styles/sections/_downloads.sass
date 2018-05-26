@@ -1,14 +1,30 @@
 .downloads
-  padding: 29px 0
+  position: relative
+  padding: 0
   background-color: $color-header
   margin-top: 395px
   margin-bottom: 20px
+  min-height: 271px
+  &::before
+    position: absolute
+    content: ""
+    width: 320px
+    height: 314px
+    top: -287px
+    left: calc(50% - 160px)
+    background: url("../img/iphone-mobile.png")
+    z-index: 2
+
+
   &__inner
+    position: absolute
     display: flex
     flex-direction: column
     width: 320px
-    padding: 0 20px
-    margin: 0 auto
+    padding: 28px 20px
+    left: calc(50% - 160px)
+    background-color: $color-header
+    z-index: 5
 
   &__link
     display: block
@@ -45,10 +61,24 @@
 
 @media (min-width: $tablet-width)
   .downloads
+    position: relative
     margin-top: 0
     background-color: transparent
+    &::before
+      position: absolute
+      content: ""
+      width: 660px
+      height: 545px
+      top: -164px
+      left: calc(50% - 170px)
+      background: url("../img/iphone-tablet.png")
     &__inner
-      padding: 0
+      position: absolute
+      width: 300px
+      padding: 30px 10px
+      background: transparent
+
+
 
     &__link
       width: 300px
@@ -74,12 +104,20 @@
   .downloads
     margin-top: 0
     background-color: transparent
+    &::before
+      position: absolute
+      content: ""
+      width: 1050px
+      height: 645px
+      top: -212px
+      left: calc(50% - 135px)
+      background: url("../img/iphone-desktop.png")
     &__inner
-      padding: 0
+      //padding: 0
 
     &__link
-      width: 305px
-      padding: 15px 30px
+      width: 300px
+      padding: 15px 28px
       margin: 0
       margin-bottom: 50px
       font-family: "Open Sans", "Arial", sans-serif

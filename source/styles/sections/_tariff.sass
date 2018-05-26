@@ -84,20 +84,12 @@ td:not(:nth-of-type(3))
 
 @media (min-width: $tablet-width)
   .tariff
-    position: relative
+    position: static
     background-color: #ffffff
     background-image: linear-gradient(176deg, #ffffff 15%, #f2f2f2 15%)
-    padding: 103px 0 87px
+    padding: 103px 0 32px
     min-height: 218px
-    &::before
-      position: absolute
-      content: ""
-      width: auto
-      height: 30px
-      bottom: 0
-      left: 0
-      background: #ffffff
-      z-index: 2
+    margin-bottom: 55px
 
     &__toggles
       display: none
