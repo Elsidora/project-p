@@ -1,13 +1,17 @@
 .contacts
+  background-color: #ffffff
   background-image: url("../img/map-mobile.jpg")
   background-repeat: no-repeat
   background-position: center
   min-height: 645px
   margin-top: -30px
-  padding-top: 30px
+  padding: 30px
   &__inner
-    background-color: #ffffff
-    padding-bottom: 20px
+    background-color: transparent
+    background: linear-gradient(-10deg, transparent 35px, #ffffff 0) right, linear-gradient(10deg, transparent 35px, #ffffff 0) left
+    background-size: 50% 100%
+    background-repeat: no-repeat
+    padding-bottom: 60px
   &__block
     margin-bottom: 17px
   &__title
@@ -45,14 +49,18 @@
     background-position: center
     min-height: 848px
     margin-top: 0
-    padding-top: 55px
+    padding-top: 85px
     &__inner
+      background-color: transparent
+      background: linear-gradient(-10deg, transparent 67px, #ffffff 0) right, linear-gradient(10deg, transparent 67px, #ffffff 0) left
+      background-size: 50% 100%
+      background-repeat: no-repeat
       padding-bottom: 0
     &__title
       width: $tablet-width
       font-size: 40px
       line-height: 50px
-      margin-top: -110px
+      margin-top: -140px
       padding: 44px 45px 35px
       color: $color-menu-mobile
     &__info
@@ -70,10 +78,13 @@
 @media (min-width: $desktop-width)
   .contacts
     background-image: url("../img/map-desktop.jpg")
-    background-color: #ffffff
     min-height: 976px
     margin-top: 85px
     padding-top: 23px
+    &__inner
+      background: linear-gradient(-10deg, transparent 105px, #ffffff 0) right, linear-gradient(10deg, transparent 105px, #ffffff 0) left
+      background-size: 50% 100%
+      background-repeat: no-repeat
     &__title
       width: $desktop-width
       font-size: 50px
@@ -83,6 +94,7 @@
     &__info
       justify-content: space-around
       padding-top: 18px
+      padding-bottom: 80px
     &__sub-title
       font-weight: 700
       font-size: 18px

@@ -33,7 +33,11 @@
           <ul class="form__list">
             <li class="form__item">
               <label class="form__label" for="family">Фамилия:</label>
+<<<<<<< HEAD
               <input class="form__input" type="text" id="family" name="family" placeholder="Укажите фамилию *" required>
+=======
+              <input class="form__input" type="text" id="family" name="family" placeholder="Укажите фамилию *">
+>>>>>>> gradients
             </li>
             <li class="form__item">
               <label class="form__label" for="name">Имя:</label>
@@ -79,11 +83,11 @@
           <ul class="form__list">
             <li class="form__item form__item--contacts">
               <label class="form__label form__label--contact" for="phone">Номер телефона</label>
-              <input class="form__input" type="tel" id="phone" name="phone" placeholder="Номер, пожалуйста" pattern="[0-9]{3}-[0-9]{2}-[0-9]{2}" required>
+              <input class="form__input" type="tel" id="phone" name="phone" placeholder="Номер, пожалуйста" pattern="[0-9]{3}-[0-9]{2}-[0-9]{2}">
             </li>
             <li class="form__item form__item--contacts">
               <label class="form__label form__label--contact" for="email">Адрес почты</label>
-              <input class="form__input" type="email" id="email" name="email" placeholder="Введите почту*" pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})" required>
+              <input class="form__input" type="email" id="email" name="email" placeholder="Введите почту*" pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})">
             </li>
           </ul>
         </fieldset>
@@ -143,7 +147,11 @@
       <b class="popup__info">Что-то пошло не так!</b>
       <p class="popup__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
     </div>
+<<<<<<< HEAD
     <button class="popup__button" aria-label="Закрыть">ok</button>
+=======
+    <button class="popup__button close-no" aria-label="Закрыть">ok</button>
+>>>>>>> gradients
   </div>
   <div class="popup popup--yes container">
     <div class="popup__description">
@@ -152,6 +160,8 @@
     </div>
     <div class="popup__back"><button class="popup__button close-yes" aria-label="Закрыть" >Закрыть окно</button></div>
   </div>
+  <div class="popup-overlay"></div>
+  <script src="js/form.js"></script>
   <script src="js/tariff.js"></script>
 </body>
 </html>
