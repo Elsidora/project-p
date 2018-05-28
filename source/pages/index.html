@@ -9,7 +9,13 @@
 <body>
   <header class="page-header">
     <div class="page-header__inner container">
-      <a class="page-header__logo"><img src="http://placehold.it/75x22" alt="Переход на главную" class="page-header__logo-image" width="" height=""></a>
+      <a class="page-header__logo">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/logotype-white-desktop.svg">
+          <source media="(min-width: 660px)" srcset="img/logotype-white-tablet.svg">
+          <img width="75" height="22" src="img/logotype-white-mobile.svg" alt="Переход на главную">
+        </picture>
+      </a>
       <nav class="main-nav main-nav--closed main-nav--nojs">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <ul class="main-nav__list">
