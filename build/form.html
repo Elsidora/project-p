@@ -9,7 +9,13 @@
 <body>
   <header class="page-header">
     <div class="page-header__inner container">
-      <a class="page-header__logo"><img src="http://placehold.it/75x22" alt="Переход на главную" class="page-header__logo-image" width="" height=""></a>
+      <a href="index.html" class="page-header__logo">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/logotype-white-desktop.svg">
+          <source media="(min-width: 660px)" srcset="img/logotype-white-tablet.svg">
+          <img src="img/logotype-white-mobile.svg" alt="Переход на главную">
+        </picture>
+      </a>
       <nav class="main-nav main-nav--closed main-nav--nojs">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <ul class="main-nav__list">
@@ -122,12 +128,13 @@
   <footer class="page-footer">
     <div class="page-footer__inner">
       <div class="page-footer__logo-block logo-block">
-        <a class="page-footer__logo">
+        <a href="index.html" class="page-footer__logo">
+
           <picture>
             <source media="(min-width: 1200px)" srcset="img/logotype-blue-desktop.svg">
-            <source media="(min-width: 660px)" srcset="img/logotype-blue-tablet.svg">
-            <img width="75" height="22" src="" alt="Переход на главную">
+            <img src="img/logotype-blue-tablet.svg" alt="Переход на главную">
           </picture>
+
         </a>
       </div>
       <div class="page-footer__social social">
@@ -160,6 +167,6 @@
   </div>
   <div class="popup-overlay"></div>
   <script src="js/form.js"></script>
-  <script src="js/tariff.js"></script>
+  <script src="js/menu.js"></script>
 </body>
 </html>

@@ -9,7 +9,13 @@
 <body>
   <header class="page-header">
     <div class="page-header__inner container">
-      <a class="page-header__logo"><img src="http://placehold.it/75x22" alt="Переход на главную" class="page-header__logo-image" width="" height=""></a>
+      <a href="index.html" class="page-header__logo">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/logotype-white-desktop.svg">
+          <source media="(min-width: 660px)" srcset="img/logotype-white-tablet.svg">
+          <img src="img/logotype-white-mobile.svg" alt="Переход на главную">
+        </picture>
+      </a>
       <nav class="main-nav main-nav--closed main-nav--nojs">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <ul class="main-nav__list">
@@ -38,98 +44,130 @@
           </picture>
           <div class="container">
             <div class="panorama-day__comment">
-              <span class="panorama-day__name">Анна</span>
-              <time class="panorama-day__time">(5 минут назад)</time>
+              <span class="panorama-day__name">Анна
+                <time class="panorama-day__time">(5 минут назад)</time></span>
               <p class="panorama-day__description">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-              <a class="panorama-day__like" aria-label="like"></a>
-              <p class="panorama-day__prefer">Нравится: <span class="count">215</span></p>
+              <p class="panorama-day__prefer">
+                <button class="panorama-day__like" aria-label="like"></button>
+                Нравится:  <span class="count">  215</span>
+
+              </p>
             </div>
           </div>
         </div>
         <div class="container">
       <div class="photos__inner">
         <div class="photo">
+          <a href="">
           <picture>
             <source media="(min-width: 1200px)" srcset="img/photo-1-desktop.jpg">
             <source media="(min-width: 660px)" srcset="img/photo-1-tablet.jpg">
             <img src="img/photo-1-mobile.jpg" class="photo__item" alt="Фраза с ключевым словом">
           </picture>
+          </a>
           <div class="photo__comment">
-            <span class="photo__name">Левон</span>
-            <time class="photo__time">(5 часов назад)</time>
+            <span class="photo__name">Левон<time class="photo__time">(5 часов назад)</time></span>
+
             <p class="photo__description">Вчера он на Луну летал, сегодня в руки к нам попал.</p>
-            <a href="" class="photo__like"></a>
-            <p class="photo__prefer">Нравится: <span class="count">356</span></p>
+
+            <div class="photo__inner">
+              <button href="" class="photo__like"></button>
+              <p class="photo__prefer">Нравится: <span class="count">356</span></p>
+            </div>
           </div>
         </div>
         <div class="photo">
+          <a href="">
           <picture>
             <source media="(min-width: 1200px)" srcset="img/photo-2-desktop.jpg">
             <source media="(min-width: 660px)" srcset="img/photo-2-tablet.jpg">
             <img src="img/photo-2-mobile.jpg" class="photo__item" alt="Фраза с ключевым словом">
           </picture>
+          </a>
           <div class="photo__comment">
-            <span class="photo__name">Антон</span>
-            <time class="photo__time">(12 часов назад)</time>
+            <span class="photo__name">Антон<time class="photo__time">(12 часов назад)</time></span>
+
             <p class="photo__description">Соседи будут рады!</p>
-            <a href="" class="photo__like"></a>
-            <p class="photo__prefer">Нравится: <span class="count">666</span></p>
+
+            <div class="photo__inner">
+              <button href="" class="photo__like"></button>
+              <p class="photo__prefer">Нравится: <span class="count">666</span></p>
+            </div>
           </div>
         </div>
         <div class="photo">
+          <a href="">
           <picture>
             <source media="(min-width: 1200px)" srcset="img/photo-3-desktop.jpg">
             <source media="(min-width: 660px)" srcset="img/photo-3-tablet.jpg">
             <img src="img/photo-3-mobile.jpg" class="photo__item" alt="Фраза с ключевым словом">
           </picture>
+          </a>
           <div class="photo__comment">
-            <span class="photo__name">Борис</span>
-            <time class="photo__time">(20 часов назад)</time>
+            <span class="photo__name">Борис<time class="photo__time">(20 часов назад)</time></span>
+
             <p class="photo__description">Здесь могла быть ваша цитата о высоком и вечном.</p>
-            <a href="" class="photo__like"></a>
-            <p class="photo__prefer">Нравится: <span class="count">215</span></p>
+
+            <div class="photo__inner">
+              <button href="" class="photo__like"></button>
+              <p class="photo__prefer">Нравится: <span class="count">215</span></p>
+            </div>
           </div>
         </div>
         <div class="photo">
+          <a href="">
           <picture>
             <source media="(min-width: 1200px)" srcset="img/photo-4-desktop.jpg">
             <source media="(min-width: 660px)" srcset="img/photo-4-tablet.jpg">
             <img src="img/photo-4-mobile.jpg" class="photo__item" alt="Фраза с ключевым словом">
           </picture>
+          </a>
           <div class="photo__comment">
-            <span class="photo__name">Сергей</span>
-            <time class="photo__time">(25 часов назад)</time>
+            <span class="photo__name">Сергей<time class="photo__time">(25 часов назад)</time></span>
+
             <p class="photo__description">Самая кубанская в мире!</p>
-            <a href="" class="photo__like"></a>
-            <p class="photo__prefer">Нравится: <span class="count">4</span></p>
+
+            <div class="photo__inner">
+              <button href="" class="photo__like"></button>
+              <p class="photo__prefer">Нравится: <span class="count">4</span></p>
+            </div>
           </div>
         </div>
         <div class="photo">
+          <a href="">
           <picture>
             <source media="(min-width: 1200px)" srcset="img/photo-5-desktop.jpg">
             <source media="(min-width: 660px)" srcset="img/photo-5-tablet.jpg">
             <img src="img/photo-5-mobile.jpg" class="photo__item" alt="Фраза с ключевым словом">
           </picture>
+          </a>
           <div class="photo__comment">
-            <span class="photo__name">Максим</span>
-            <time class="photo__time">(40 часов назад)</time>
+            <span class="photo__name">Максим<time class="photo__time">(40 часов назад)</time></span>
+
             <p class="photo__description">Где снег-то?</p>
-            <a href="" class="photo__like"></a>
-            <p class="photo__prefer">Нравится: <span class="count">150</span></p>
+
+            <div class="photo__inner">
+              <button href="" class="photo__like"></button>
+              <p class="photo__prefer">Нравится: <span class="count">150</span></p>
+            </div>
           </div>
         </div>
         <div class="photo">
+          <a href="">
           <picture>
             <source media="(min-width: 1200px)" srcset="img/photo-6-desktop.jpg">
             <source media="(min-width: 660px)" srcset="img/photo-6-tablet.jpg">
             <img src="img/photo-6-mobile.jpg" class="photo__item" alt="Фраза с ключевым словом">
           </picture>
+          </a>
           <div class="photo__comment">
-            <span class="photo__name">Надежда</span>
-            <time class="photo__time">(45 часов назад)</time>
+            <span class="photo__name">Надежда<time class="photo__time">(45 часов назад)</time></span>
+
             <p class="photo__description">Всем GM и взаимные лайки!</p>
-            <a href="" class="photo__like"></a>
-            <p class="photo__prefer">Нравится: <span class="count">2560</span></p>
+            <div class="photo__inner">
+              <button href="" class="photo__like"></button>
+              <p class="photo__prefer">Нравится: <span class="count">2560</span></p>
+            </div>
           </div>
         </div>
       </div>
@@ -185,7 +223,12 @@
   <footer class="page-footer">
     <div class="page-footer__inner">
       <div class="page-footer__logo-block logo-block">
-        <a class="page-footer__logo"><img src="http://placehold.it/147x40" alt="Переход на главную" class="page-footer__logo-image" width="" height=""></a>
+        <a href="index.html" class="page-footer__logo">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/logotype-blue-desktop.svg">
+            <img src="img/logotype-blue-tablet.svg" alt="Переход на главную">
+          </picture>
+        </a>
       </div>
       <div class="page-footer__social social">
 
@@ -201,6 +244,6 @@
       </div>
     </div>
   </footer>
-  <script src="js/tariff.js"></script>
+  <script src="js/menu.js"></script>
 </body>
 </html>

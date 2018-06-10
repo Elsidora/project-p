@@ -6,9 +6,22 @@
   min-height: 645px
   margin-top: -30px
   padding: 30px
+
+  &__map iframe
+    position: absolute
+    width: 320px
+    height: 645px
+    left: calc(50% - 160px)
+    border: none
+    z-index: 1
+
+  &__info
+    position: relative
+    z-index: 2
+
   &__inner
     background-color: transparent
-    background: linear-gradient(-10deg, transparent 35px, #ffffff 0) right, linear-gradient(10deg, transparent 35px, #ffffff 0) left
+    background: linear-gradient(-10deg, transparent 55px, #ffffff 0) right, linear-gradient(10deg, transparent 55px, #ffffff 0) left
     background-size: 50% 100%
     background-repeat: no-repeat
     padding-bottom: 60px
@@ -31,7 +44,7 @@
     display: block
     &:hover
       color: #000000
-      border-bottom: 1px solid  #000000
+      text-decoration: underline solid  #000000
     &:active
       color: #b5b9be
       border: none
@@ -45,14 +58,19 @@
 @media (min-width: $tablet-width)
   .contacts
     background-image: url("../img/map-tablet.jpg")
-    background-repeat: no-repeat
-    background-position: center
     min-height: 848px
     margin-top: 0
+    padding: 0
     padding-top: 85px
+
+    &__map iframe
+      width: 660px
+      height: 848px
+      left: calc(50% - 330px)
+
     &__inner
-      background-color: transparent
-      background: linear-gradient(-10deg, transparent 67px, #ffffff 0) right, linear-gradient(10deg, transparent 67px, #ffffff 0) left
+      background-color: #ffffff
+      background: linear-gradient(-10deg, transparent 83px, #ffffff 0) right, linear-gradient(10deg, transparent 83px, #ffffff 0) left
       background-size: 50% 100%
       background-repeat: no-repeat
       padding-bottom: 0
@@ -81,12 +99,19 @@
     min-height: 976px
     margin-top: 85px
     padding-top: 23px
+
+    &__map iframe
+      width: 1200px
+      height: 976px
+      left: calc(50% - 600px)
+
+
     &__inner
-      background: linear-gradient(-10deg, transparent 105px, #ffffff 0) right, linear-gradient(10deg, transparent 105px, #ffffff 0) left
+      background: linear-gradient(-9deg, transparent 112px, #ffffff 0) right, linear-gradient(9deg, transparent 112px, #ffffff 0) left
       background-size: 50% 100%
       background-repeat: no-repeat
     &__title
-      width: $desktop-width
+      width: 1200px
       font-size: 50px
       line-height: 60px
       margin-top: -46px
