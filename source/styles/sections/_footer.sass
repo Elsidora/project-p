@@ -8,14 +8,29 @@
   &__logo-block
     margin-bottom: 9px
   &__copyright
+    display: flex
+    justify-content: space-between
     width: 130px
     margin: 0 auto
     text-align: left
     margin-top: 20px
   &__link
     font-size: 0
+
+  &__link svg
+    width: 27px
+    height: 34px
+    fill: $color-form
+    &:hover
+      fill: $color-header
+    &:active
+      fill: $color-header
+      opacity: 0.3
+
   &--index
     display: none
+
+
 
 .social
   display: flex
@@ -39,9 +54,11 @@
 
 @media (min-width: $tablet-width)
   .page-footer
+    position: relative
     min-height: 127px
     margin-top: -127px
     background-color: #ffffff
+    z-index: 2
     &--index
       display: block
     &__inner
@@ -54,6 +71,9 @@
     &__copyright
       margin: 0
       margin-top: 50px
+
+
+
 
   .social
     width: 181px
@@ -77,6 +97,8 @@
     &__text
       font-size: 18px
       line-height: 18px
+      margin-top: 5px
+
 
   .social
     padding: 74px 0

@@ -51,13 +51,23 @@
     text-align: center
 .links
   display: flex
+  flex-direction: row
   flex-wrap: wrap
   justify-content: space-around
   padding: 20px
   &__link
     width: 47px
     height: 56px
-    background-color: red
+    margin-top: auto
+
+    &--android
+      width: 42px
+      height: 47px
+
+    &--microsoft
+      width: 44px
+      height: 42px
+
 
 @media (min-width: $tablet-width)
   .downloads
